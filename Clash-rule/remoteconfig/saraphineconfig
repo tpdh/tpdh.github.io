@@ -1,0 +1,27 @@
+[custom]
+ruleset=🎯 全球直连,https://saraphine.tk/Clash-rule/LocalAreaNetwork.list
+ruleset=🎯 全球直连,https://saraphine.tk/Clash-rule/UnBan.list
+ruleset=🛑 全球拦截,https://saraphine.tk/Clash-rule/BanAD.list
+ruleset=🍃 应用净化,https://saraphine.tk/Clash-rule/BanProgramAD.list
+ruleset=📢 谷歌FCM,https://saraphine.tk/Clash-rule/Ruleset/GoogleFCM.list
+ruleset=🎯 全球直连,https://saraphine.tk/Clash-rule/GoogleCN.list
+ruleset=📲 电报信息,https://saraphine.tk/Clash-rule/Telegram.list
+ruleset=🌍 国外媒体,https://saraphine.tk/Clash-rule/ProxyMedia.list
+ruleset=🔰 节点选择,https://saraphine.tk/Clash-rule/ProxyLite.list
+ruleset=🎯 全球直连,https://saraphine.tk/Clash-rule/ChinaDomain.list
+ruleset=🎯 全球直连,https://saraphine.tk/Clash-rule/ChinaCompanyIp.list
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🔰 节点选择`select`[]♻️ 自动选择`[]🛡 负载均衡`[]DIRECT`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🛡️ 负载均衡`load-balance`.*`http://www.gstatic.com/generate_204`150
+custom_proxy_group=🌍 国外媒体`select`[]🔰 节点选择`[]♻️ 自动选择`[]🎯 全球直连`[]🛡️ 负载均衡`.*
+custom_proxy_group=📲 电报信息`select`[]🔰 节点选择`[]🎯 全球直连[]🛡️ 负载均衡`.*
+custom_proxy_group=📢 谷歌FCM`select`[]🔰 节点选择`[]🎯 全球直连`[]♻️ 自动选择[]🛡️ 负载均衡`.*
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🔰 节点选择`[]♻️ 自动选择
+custom_proxy_group=🛑 全球拦截`select`[]REJECT
+custom_proxy_group=🍃 应用净化`select`[]REJECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🔰 节点选择`[]🎯 全球直连`[]♻️ 自动选择[]🛡️ 负载均衡`.*
+enable_rule_generator=true
+overwrite_original_rules=true
