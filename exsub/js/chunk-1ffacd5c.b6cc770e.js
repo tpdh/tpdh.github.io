@@ -902,9 +902,9 @@
         },
         l = [],
         i = (o("4de4"), o("c975"), o("b64b"), o("d3b7"), o("ac1f"), o("25f0"), o("5319"), "https://github.com/ACL4SSR/ACL4SSR"),
-        a = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
+        a = "https://saraphine.tk/Clash-rule/remoteconfig/saraphineconfig.ini",
         r = "https://github.com/tindy2013/subconverter/releases",
-        s = "https://subcon.dlj.tf/sub?",
+        s = "https://api.v1.mk/sub?",
         c = "clash&new_name=true",
         u = "https://suo.yt/short",
         f = "https://api.wcc.best/config/upload",
@@ -935,11 +935,11 @@
                             Surge2: "surge&ver=2"
                         },
                         customBackend: {
-                            "localhost:25500 本地版": "http://localhost:25500/sub?",
-                            "subcon.dlj.tf(subconverter作者提供-最稳定)": "https://subcon.dlj.tf/sub?",
-                            "api.v1.mk(肥羊作者后端)": "https://api.v1.mk/sub?",
-                            "pub-api-1.bianyuan.xyz (边缘作者后端-跳转1)": "https://pub-api-1.bianyuan.xyz/sub?",
-                            "subconverter-web.now.sh(subconverter作者提供2-跳转1)": "https://subconverter-web.now.sh/sub?",
+                            "localhost:25500 本地版(需要转换工具)": "http://localhost:25500/sub?",
+                            "api.v1.mk(肥羊作者提供)": "https://api.v1.mk/sub?",
+                            "subcon.dlj.tf(subconverter作者提供)": "https://subcon.dlj.tf/sub?",
+                            "pub-api-1.bianyuan.xyz (边缘-跳转subcon.dlj.tf)": "https://pub-api-1.bianyuan.xyz/sub?",
+                            "subconverter-web.now.sh(subconverter-跳转subcon.dlj.tf)": "https://subconverter-web.now.sh/sub?",
                             "subconverter.herokuapp.com(subconverter作者提供3)": "https://subconverter.herokuapp.com/sub?",
                             "sub.id9.cc(品云提供)": "https://sub.id9.cc/sub?",
                             "api.dler.io(sub作者&lhie1提供)": "https://api.dler.io/sub?",
@@ -950,10 +950,10 @@
                             value: "http://localhost:25500/sub?"
                         },
                         {
-                            value: "https://subcon.dlj.tf/sub?"
+                            value: "https://api.v1.mk/sub?"
                         },
                         {
-                            value: "https://api.v1.mk/sub?"
+                            value: "https://subcon.dlj.tf/sub?"
                         },
                         {
                             value: "https://pub-api-1.bianyuan.xyz/sub?" 
@@ -968,20 +968,16 @@
                             value: "https://api.wcc.best/sub?"
                         }],
                         remoteConfig: [{
-                            label: "默认",
+                            label: "Saraphineの配置",
                             options: [{
-                                label: "不选，由接口提供方提供",
-                                value: ""
+                                label: "Saraphineの负载均衡",
+                                value: "https://saraphine.tk/Clash-rule/remoteconfig/saraphineconfig.ini"
                             }]
                         },
                         {
                             label: "ACL4SSR",
                             options: [{
-                                label: "ACL4SSR分组比较全",
-                                value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
-                            },
-                            {
-                                label: "ACL4SSR更多去广告",
+                                label: "ACL4SSR默认版",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_AdblockPlus.ini"
                             },
                             {
@@ -1021,27 +1017,27 @@
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full.ini"
                             },
                             {
-                                label: "ACL4SSR全分组 多模式",
+                                label: "ACL4SSR多模式",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full_MultiMode.ini"
                             },
                             {
-                                label: "ACL4SSR全分组 无自动测速",
+                                label: "ACL4SSR无自动测速",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full_NoAuto.ini"
                             },
                             {
-                                label: "ACL4SSR全分组 更多去广告",
+                                label: "ACL4SSR更多去广告",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full_AdblockPlus.ini"
                             },
                             {
-                                label: "ACL4SSR全分组 奈飞全量",
+                                label: "ACL4SSR奈飞全量",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full_Netflix.ini"
                             },
                             {
-                                label: "ACL4SSR全分组 谷歌细分",
+                                label: "ACL4SSR谷歌细分",
                                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Full_Google.ini"
                             },
                             {
-                                label: "ACL4SSR默认版 分组比较全",
+                                label: "ACL4SSR默认版 分组全",
                                 value: "config/ACL4SSR.ini"
                             },
                             {
